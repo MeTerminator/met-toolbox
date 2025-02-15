@@ -43,19 +43,17 @@ export default function Footer() {
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MeTerminator
+        © {new Date().getFullYear()} MeTerminator | 
+        <a
+          className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://met6.top/"
+        >
+          <ArrowIcon />
+          <p className="ml-2 h-7">MeT-Home</p>
+        </a>
       </p>
-      <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://met6.top/"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">MeT-Home</p>
-          </a>
-        </li>
     </footer>
   )
 }
